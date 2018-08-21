@@ -1,0 +1,33 @@
+<div class="register-container">
+    <?php if ($this->error != '') { ?>
+        <div class="error-message"><?php echo $this->error ?></div>
+    <?php } ?>
+
+    <?php if ($this->success != '') { ?>
+        <div class="success-message"><?php echo $this->success ?></div>
+    <?php } ?>
+
+    <form action="/register" method="POST">
+        <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value="<?php echo $this->email ?>" />
+        </div>
+        <div class="input-container">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="<?php echo $this->name ?>" />
+        </div>
+        <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+        </div>
+        <div class="input-container">
+            <label for="password">Repeat Password</label>
+            <input type="password" name="repeat_password" id="repeat_password" />
+        </div>
+
+        <div class="input-container">
+            <input type="submit" name="submit" value="Sign me UP" />
+        </div>
+    </form>
+</div>
+

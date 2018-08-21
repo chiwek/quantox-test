@@ -1,0 +1,19 @@
+<div class="login-container">
+    <?php if ($this->error != '') { ?>
+    <div class="error-message"><?php echo $this->error ?></div>
+    <?php } ?>
+    <form action="login" method="POST">
+        <div class="input-container">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="<?php echo $this->email ?>" />
+        </div>
+        <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+        </div>
+
+        <div class="input-container">
+            <input type="submit" name="submit" value="LogIn" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,196 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "24278701cd8bb7cc4b331fd3ecba2c6c",
+    "content-hash": "ea7287d0267d88213070dc00780fd8c1",
+    "packages": [
+        {
+            "name": "dibi/dibi",
+            "version": "v3.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dg/dibi.git",
+                "reference": "5a7543a5a647ad5b5a340797f1b110d43fe7f728"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dg/dibi/zipball/5a7543a5a647ad5b5a340797f1b110d43fe7f728",
+                "reference": "5a7543a5a647ad5b5a340797f1b110d43fe7f728",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.4"
+            },
+            "replace": {
+                "dg/dibi": "*"
+            },
+            "require-dev": {
+                "nette/tester": "~1.7",
+                "tracy/tracy": "~2.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ],
+                "files": [
+                    "src/loader.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                }
+            ],
+            "description": "Dibi is Database Abstraction Library for PHP",
+            "homepage": "https://dibiphp.com",
+            "keywords": [
+                "access",
+                "database",
+                "dbal",
+                "mssql",
+                "mysql",
+                "odbc",
+                "oracle",
+                "pdo",
+                "postgresql",
+                "sqlite",
+                "sqlsrv"
+            ],
+            "time": "2018-05-10 19:55:12"
+        },
+        {
+            "name": "josantonius/session",
+            "version": "1.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Josantonius/PHP-Session.git",
+                "reference": "08b09ad43927d172963d15da29259bcdf90a8f43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Josantonius/PHP-Session/zipball/08b09ad43927d172963d15da29259bcdf90a8f43",
+                "reference": "08b09ad43927d172963d15da29259bcdf90a8f43",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.3 || ^2.8",
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^5.7 || ^6.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Josantonius\\Session\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josantonius",
+                    "email": "hello@josantonius.com",
+                    "homepage": "https://josantonius.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP library for handling sessions.",
+            "keywords": [
+                "hhvm",
+                "php",
+                "session"
+            ],
+            "time": "2018-05-04 08:30:19"
+        },
+        {
+            "name": "klein/klein",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/klein/klein.php.git",
+                "reference": "6549676cc831b9417332b3d9485c64bbf7bac728"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/klein/klein.php/zipball/6549676cc831b9417332b3d9485c64bbf7bac728",
+                "reference": "6549676cc831b9417332b3d9485c64bbf7bac728",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "^2.2",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "1.4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Klein\\": "src/Klein/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris O'Hara",
+                    "email": "cohara87@gmail.com",
+                    "homepage": "http://chris6f.com/",
+                    "role": "Creator/Developer"
+                },
+                {
+                    "name": "Trevor Suarez",
+                    "email": "rican7@gmail.com",
+                    "homepage": "https://trevorsuarez.com/",
+                    "role": "Contributor/Developer"
+                }
+            ],
+            "description": "A lightning fast router for PHP",
+            "homepage": "https://github.com/klein/klein.php",
+            "keywords": [
+                "boilerplate",
+                "router",
+                "routing",
+                "sinatra"
+            ],
+            "time": "2017-02-01 23:08:58"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quantox TEST</title>
+    <link href="app.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+
+<div class="header" id="header">
+    <?php if ($this->user) { ?>
+        <div class="top-menu-container">
+            <div class="hello-user">Welcome <?php echo $this->user->name ?>!</div>
+
+            <a href="/" title="Home">Home</a>
+            <a href="/logout" title="Logout">Logout</a>
+        </div>
+    <?php } else { ?>
+        <div class="top-menu-container">
+            <a href="/login" title="Login">Login</a>
+            <a href="/register" title="Register">Register</a>
+        </div>
+    <?php } ?>
+
+    <div class="top-search-container">
+        <form action="/search" method="GET">
+            <div class="search-input">
+                <input type="text" name="query" value="<?php echo $this->searchTerm ?>" title="Enter a search term" placeholder="Search..." />
+                <input type="submit" name="submit" value="Search" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="page-container">

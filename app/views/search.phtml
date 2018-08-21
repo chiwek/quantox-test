@@ -1,0 +1,15 @@
+<div class="search-container">
+    <h1>Search Results</h1>
+    <div class="table">
+        <div class="row top">
+            <div>Name</div>
+            <div>Email</div>
+        </div>
+    <?php foreach ($this->results as $user) { ?>
+        <div class="row">
+            <div><?php echo $user->name ?></div>
+            <div><?php echo $user->email ?></div>
+        </div>
+    <?php } ?>
+    </div>
+</div>
